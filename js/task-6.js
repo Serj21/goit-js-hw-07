@@ -9,6 +9,11 @@ const destrBtn = document.querySelector("button[data-destroy]");
 const inputNum = document.querySelector("input[type=number]");
 const createdBoxes = document.querySelector("#boxes");
 
+const controlsContainer = document.querySelector("#controls");
+const newPar = document.createElement("p");
+newPar.textContent = "Please enter number from 1 to 100";
+controlsContainer.insertBefore(newPar, inputNum);
+
 createBtn.addEventListener("click", createBoxesOnClick);
 destrBtn.addEventListener("click", destroyBoxesOnClick);
 
@@ -16,6 +21,7 @@ function createBoxesOnClick() {
   let inputValue = inputNum.value;
 
   if (inputValue < 1 || inputValue > 100) {
+    alert("Enter number from 1 to 100");
     return;
   }
   destroyBoxesOnClick();
