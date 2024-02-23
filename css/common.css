@@ -96,6 +96,11 @@ button[data-destroy] {
   background-color: rgba(255, 78, 78);
 }
 
+button[data-create] {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 #controls > button {
   border-radius: 8px;
   padding: 8px 16px;
