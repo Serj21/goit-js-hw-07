@@ -39,6 +39,8 @@ input#name-input {
   color: #2e2f42;
 
   border-radius: 5px;
+
+  margin-bottom: 16px;
 }
 
 .gallery {
