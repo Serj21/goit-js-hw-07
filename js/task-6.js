@@ -9,11 +9,6 @@ const destrBtn = document.querySelector("button[data-destroy]");
 const inputNum = document.querySelector("input[type=number]");
 const createdBoxes = document.querySelector("#boxes");
 
-const controlsContainer = document.querySelector("#controls");
-const newPar = document.createElement("p");
-newPar.textContent = "Please enter number from 1 to 100";
-controlsContainer.insertBefore(newPar, inputNum);
-
 createBtn.addEventListener("click", createBoxesOnClick);
 destrBtn.addEventListener("click", destroyBoxesOnClick);
 
@@ -31,9 +26,9 @@ function createBoxesOnClick() {
 
 function createBoxes(amount) {
   const boxArr = [];
-  let size = 24;
+  let size = 30;
   for (let i = 1; i <= amount; i++) {
-    size += 24;
+    size += 10;
     const divBox = document.createElement("div");
     divBox.style.backgroundColor = getRandomHexColor();
     divBox.style.height = `${size}px`;

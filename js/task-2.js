@@ -34,8 +34,5 @@ images.forEach((image) => {
   imageElement.alt = image.alt;
 
   listItem.appendChild(imageElement);
-
   galleryList.appendChild(listItem);
 });
-
-ulEl.appendChild(galleryList);
